@@ -5,175 +5,188 @@
 }
 
 html{
+    margin: 0;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
     height: 100%;
-    font-size: large;
 }  
-
+/*cabecera*/
 nav{
     background-color: rgba(10, 10, 0, 0.769);
     display: flex; 
-    position: fixed;
-    height: 20%;
+    height: 15%;
     width: 100%;
     margin: 0%;
-    z-index: 1;
-    
+    z-index: 1; 
+    position: relative;
 }
 
-h1 {
+
+.cabezaa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%; 
+}
+.cabeza a{
+    display: flex;
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    padding-right: 5%; 
+    padding-left: 5%;
+    width: 100%;
+}
+
+.logoh1{
+    display: flex;
+    width: 30%;
+}
+
+.logoh1 h1 {
+    display: flex;
+    align-items: center;
     color: aliceblue;
-    width: 5%; 
-    margin-right: auto;
-    margin-top: 1.5%;
     margin-left: 20px;
-    margin-bottom: 1%;
-    text-align: center;
-    text-shadow: 2px 2px 10px rgba(46, 45, 45, 0.5);  
+    width: 15%;
+    height: 100%;
+    text-shadow: 2px 2px 10px rgba(46, 45, 45, 0.5);
 }
 
-h1:hover{
+nav a:hover,
+ h1:hover{
     color: #f29422d8;
     text-shadow: none;
 }
-nav a{
-    color: rgb(255, 252, 252);
-    text-decoration: none;
-    padding: 10px; 
-    height: 0px;
-    margin: 40px 30px 10px 10px;
-    display: flex; 
-    align-items: center; 
-}
 
-nav a:hover{
-    color: #f29422d8;
-}
-
-a{
-    text-decoration: none;
-    color: #fbf6f6;
-}
-
-header{
+/*foto de fondo*/
+.foto{
     background-image: url(imagenes/hombre.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-.first {
-    
-    position: relative; 
     width: 100%;
     height: 100vh;
-    background-size: cover; 
-    background-position: center; 
+}
+.first{
+    width: 100%;
+    height: 100vh;
+    border-radius: 30px;
     display: flex;
-    justify-content: center; 
-    align-items: flex-end; 
-}
-.first p{
-    font-size: 150%;
-    color: white;
-    position: absolute; 
-    text-align: center; 
-    bottom: 40%;
-    
-}
-
-
-.first h2 {
-    font-size: 350%;
-    color: white;
-    position: absolute; 
-    text-align: center; 
-    bottom: 14%;  
-}
-
-.first h2 span {
-    display: block; 
-}
-
-.second{
-    display: flex;
-    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    
 }
+.first .first1{
+    width: 50rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.primero1 p{
+    font-size: 150%;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+.primero2 p{
+    font-size: 325%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/*segunda seccion*/
+main .fondo{
+    background-image: url(imagenes/hombre.webp);  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.second{ 
+    display: flex;
+    height: 70vh;
+    background-color: #313030;
+    
+}
 .derecha{
-    width: 60%;
+    width: 50%;
+    background-color: #0f0e0e;
 }
 
 .derecha img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
-    height: 85vh;   
+    display: block;
+    height: calc(100vh * 70 / 100);
+ 
 }
-
 .izquierda{
+    width: 50%;
     background-color: #f09b34ed;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
 }
 .izquierda h3{
-    display: block;
-    margin-top: 10%;
-    margin-left: 25%;
-    line-height: 1.5;
+    width: 20rem;
     font-size: 190%;
-    color: #151515;
-}
+    display: flex;
+    flex-direction: column;
 
-.izquierda h3 span{
-    display: block; 
 }
-
 .izquierda p{
-    margin: 5% 20% 80% 25%;
+    margin-top: 0.625rem;
     line-height: 1.5;
     font-size: 100%;
+    width: 20rem;
     text-align: justify; 
     color: #151515;
 } 
+
+/*tercera parte*/
 .tercero {
     display: flex;
-    flex-wrap: nowrap; 
-    margin-bottom: 0%;
+    justify-content: space-around;
 }
-
-.imagen-con-texto {
-    width: 33.33%; 
-    text-align: center;
-    margin: 0; 
-    padding: 0; 
-    position: relative;
-    background-color: rgb(220, 209, 209);
-}
-
-.imagen-con-texto img {
-    width: 100%; 
-    height: 35vw; 
-    border-radius: 1px;
- }
-.superpuesto{
-    position: relative;
-    top: -20%;
-    left: 20%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+ .tercero img{
+    width: 100%;
+    border-radius: 2%;
     margin: 0%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 60%;
+ }
+
+ .superpuesto a{
+    color: white;
+    text-decoration: none;
+ }
+
+.superpuesto{
+    background-color: rgba(9, 8, 8, 0.92);
+    color: white;
+    padding: 5%;
+    width: 70%;
     border-radius: 5px;
     transition: opacity 0.3s ease; 
     font-size: large; 
+    position: relative;
+    bottom: 20%;
+    right: -50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: all 1s;
 }
-
 .superpuesto:hover{
-    background-color: rgba(0, 0, 0, 0.873);
-    transform: scale(1.2);
-    transition: all 0.3s;   
+    background-color: rgba(41, 41, 41, 0.873);
+    transform: scale(1.1); 
 }
 
 /*Css de footer*/
@@ -198,77 +211,114 @@ footer{
 
 .footer-content p {
     margin: 0;
-    font-size: 16px;
-     
+    font-size: 16px;  
 }
 
-.footer-content::before {
-    content: '';
+.footer-content::before{
+    content: '💛';
     width: 30px;
     height: 30px;
     border-radius: 50%;
     top: 5px;
     margin-right: 20px;
-    background-image: url('imagenes/corazonNaranja.ico'); 
-    background-size: cover;
 }  
 
-.info a{
-    color: #151414;
-}
 
+/*informacion al final*/
 .info{
-    margin-top: 0;
-    color: #f8f2f2; 
-    margin-left: 0%;
-   
-    
+    display: flex;
+    justify-content: end;
 }
-.info p{
-   color: #0f0f0f;
-   padding-left: 30px;
-   text-align: left;
-   font-size: 16px; 
+.info1, .info2{
    line-height: 2em;
-   background-color: rgb(220, 209, 209);
+   width: 30%;
+   padding: 20px;
+   color: #b98a44;
+ 
 }
-
-/*Css de Acerca de*/
-.titulo1 {
+.info a{
+    text-decoration: none;
+    color: #b98a44;
+    display: block;
+}
+.direccion::before{
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    background-image: url('imagenes/mapa.png'); 
+    background-size: cover; 
+}
+.telefono::before{
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    background-image: url('imagenes/whatsapp.png'); 
+    background-size: cover; 
+}
+.correo::before{
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    margin-left: 5px;
+    background-image: url('imagenes/gmail.png'); 
+    background-size: cover; 
+}
+/*Css header servicios y acerca de*/
+.titulo1 { /*parte de arriba de acerca-servicios*/
     color: #fbfbfc;
     background-image: url(imagenes/hombre.webp);
     font-size: x-large;
-    width: 100%;
-    height: 35vh;
     display: flex;
     justify-content: center; 
-    align-items: flex-end; 
+    height: auto;
+    margin-top: -81px;
+    
 }
-
+.titulo1 h2{
+    height: 130px;
+    font-size: larger;
+    display: flex;
+    align-items: end; 
+}
+/*Css servicios*/
 table {
     border-collapse: collapse;
     width: 50%;
     font-size: larger;
+    margin-top: 80px;
+
   }
   
   th, td {
-    padding: 8px;
     text-align: left;
     border-bottom: 1px solid #0c0c0c8b;
     color: #313030;
   }
-button{
+.tabla-container table button{
     font-size: small;
-    color: #ffffff;
-    background-color: #313030;
+    background-color: rgba(10, 10, 0, 0.769);
     padding: 6%;
+    transition: background-color 0.2s ease;
+    border: none;
   }
+
+.tabla-container table button:hover{
+    background-color: rgb(10, 10, 0);  
+}
+.tabla-container a{
+    color: #ffffff;
+}
 .tabla-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    margin-top: 3%;
+    height: 80vh;
     font-size: large;
     line-height: 4;
 }
@@ -280,7 +330,6 @@ button{
     padding: 20px;
     margin-left: 25%;
     color: #313030;
-   
 }
 
 form {
@@ -306,11 +355,12 @@ input[type="email"] {
     color: #151515;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: rgba(10, 10, 0, 0.769);
+    color: #fbfbfb;
 }
 
 
@@ -322,9 +372,14 @@ button:hover {
     font-size: larger;
 }
 /*Css de contacto*/
+.cabezatodo{
+    position: relative;
+}
 .quinto{
     display: flex;
     height: 100vh;
+    margin-top: -81px;
+   
  }
 
 .contacto{
@@ -333,6 +388,12 @@ button:hover {
     color: rgb(1, 1, 1);
  }
 
+.contacto .contactocontenedor{
+    width: 60%;
+    display: block;
+    justify-content: center;
+    margin: 45% auto;
+}
  .contactoImg{
     width: 60%; 
  }   
@@ -344,9 +405,6 @@ button:hover {
 
  .contacto h3{
     display: block;
-    margin-top: 50%;
-    margin-left: 20%;
-    margin-right: 30%;
     line-height: 1.5;
     font-size: 140%;
 }
@@ -355,30 +413,27 @@ button:hover {
     display: block; 
 }
 
-.contacto p{
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 30%;
-    font-size: 90%;
-    text-align: left; 
-} 
+ .contacto p{
+    line-height: 2;
+}  
 .quinto a{
     color: #0f0e0e;
 }
 
+a{
+    text-decoration: none;
+}
 
 .quinto button{
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 15%;
+    display: flex;
+    justify-content: end;
     padding: 10px;
-    width: 50%;
+    margin-top: 5px;
     background-color: #f09b34ed;
     color: #151515;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     font-size: large;
-
 }
 
