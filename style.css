@@ -12,16 +12,23 @@ html{
     height: 100%;
 }  
 /*cabecera*/
-nav{
+.foto nav{
     background-color: rgba(10, 10, 0, 0.769);
     display: flex; 
     height: 15%;
     width: 100%;
     margin: 0%;
     z-index: 1; 
-    position: relative;
+    position: fixed;
 }
-
+.cabezatodo nav {
+    background-color: rgba(10, 10, 0, 0.769);
+    display: flex; 
+    height: 15%;
+    width: 100%;
+    margin: 0%;
+    z-index: 1;
+}
 
 .cabezaa{
     display: flex;
@@ -29,6 +36,7 @@ nav{
     align-items: center;
     width: 70%; 
 }
+
 .cabeza a{
     display: flex;
     color: rgb(255, 252, 252);
@@ -280,8 +288,10 @@ footer{
     margin-top: -81px;
     
 }
+
+
 .titulo1 h2{
-    height: 130px;
+    height: 170px;
     font-size: larger;
     display: flex;
     align-items: end; 
@@ -300,6 +310,9 @@ table {
     border-bottom: 1px solid #0c0c0c8b;
     color: #313030;
   }
+#borde{
+    border-bottom: none;
+}
 .tabla-container table button{
     font-size: small;
     background-color: rgba(10, 10, 0, 0.769);
@@ -373,13 +386,18 @@ button:hover {
 }
 /*Css de contacto*/
 .cabezatodo{
-    position: relative;
+    height: 20%;
+    background-color: rgba(174, 174, 39, 0.769);
+    display: flex; 
+    height: 15%;
+    width: 100%;
+    margin: 0%;
+    z-index: 1; 
 }
 .quinto{
     display: flex;
     height: 100vh;
     margin-top: -81px;
-   
  }
 
 .contacto{
