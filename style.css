@@ -310,9 +310,7 @@ table {
     border-bottom: 1px solid #0c0c0c8b;
     color: #313030;
   }
-#borde{
-    border-bottom: none;
-}
+
 .tabla-container table button{
     font-size: small;
     background-color: rgba(10, 10, 0, 0.769);
