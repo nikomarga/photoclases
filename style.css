@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+
+@media only screen and (max-width: 600px) {
+}
+
+
+@media only screen and (min-width: 601px) {
+}
+
 html{
     margin: 0;
     padding: 0;
@@ -35,6 +43,8 @@ html{
     justify-content: space-around;
     align-items: center;
     width: 70%; 
+    transition: background-color 0.2s ease;
+    transition: all 1s;
 }
 
 .cabeza a{
@@ -173,28 +183,77 @@ main .fondo{
 
  .superpuesto a{
     color: white;
-    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
  }
 
 .superpuesto{
-    background-color: rgba(9, 8, 8, 0.92);
-    color: white;
-    padding: 5%;
-    width: 70%;
-    border-radius: 5px;
-    transition: opacity 0.3s ease; 
-    font-size: large; 
-    position: relative;
-    bottom: 20%;
-    right: -50px ;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    transition: all 1s;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    padding: 4%;
+    width: 80%;
+    border-radius: 5px;
+    font-size: large; 
+    margin-left: 30px;
+    position: relative;
+    bottom: 80px;
+    transition: all 2s ease, 0.1s ease; 
 }
 .superpuesto:hover{
-    background-color: rgba(41, 41, 41, 0.873);
-    transform: scale(1.1); 
+    background-color: rgba(9, 8, 8, 0.832);
+    transform: scale(1.2);
+}
+
+/*informacion al final*/
+.info{
+    display: flex;
+    justify-content: end;
+    
+}
+.info1, .info2{
+   line-height: 2em;
+   width: 30%;
+   padding: 20px;
+   color: #b98a44;
+   overflow-wrap: break-word;
+}
+.info a{
+    text-decoration: none;
+    color: #b98a44;
+    display: block;
+}
+.direccion::before{
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    background-image: url('imagenes/mapa.png'); 
+    background-size: cover; 
+}
+.telefono::before{
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    background-image: url('imagenes/whatsapp.png'); 
+    background-size: cover; 
+}
+.correo::before{
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    margin-left: 5px;
+    background-image: url('imagenes/gmail.png'); 
+    background-size: cover; 
 }
 
 /*Css de footer*/
@@ -232,51 +291,6 @@ footer{
 }  
 
 
-/*informacion al final*/
-.info{
-    display: flex;
-    justify-content: end;
-}
-.info1, .info2{
-   line-height: 2em;
-   width: 30%;
-   padding: 20px;
-   color: #b98a44;
- 
-}
-.info a{
-    text-decoration: none;
-    color: #b98a44;
-    display: block;
-}
-.direccion::before{
-    content: '';
-    display: inline-block;
-    width: 20px; 
-    height: 20px; 
-    margin-right: 5px; 
-    background-image: url('imagenes/mapa.png'); 
-    background-size: cover; 
-}
-.telefono::before{
-    content: '';
-    display: inline-block;
-    width: 20px; 
-    height: 20px; 
-    margin-right: 5px; 
-    background-image: url('imagenes/whatsapp.png'); 
-    background-size: cover; 
-}
-.correo::before{
-    content: '';
-    display: inline-block;
-    width: 20px; 
-    height: 20px; 
-    margin-right: 5px; 
-    margin-left: 5px;
-    background-image: url('imagenes/gmail.png'); 
-    background-size: cover; 
-}
 /*Css header servicios y acerca de*/
 .titulo1 { /*parte de arriba de acerca-servicios*/
     color: #fbfbfc;
@@ -315,8 +329,9 @@ table {
     font-size: small;
     background-color: rgba(10, 10, 0, 0.769);
     padding: 6%;
-    transition: background-color 0.2s ease;
     border: none;
+    transition: background-color 0.2s ease;
+    transition: all 1s;
   }
 
 .tabla-container table button:hover{
@@ -362,16 +377,16 @@ input[type="email"] {
 .container button{
     padding: 5px;
     width: 50%;
-    background-color: #f09b34ed;
-    color: #151515;
+    background-color: rgba(255, 168, 61, 0.988);
     border: none;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    transition: all 1s;
 }
 
 button:hover {
-    background-color: rgba(10, 10, 0, 0.769);
-    color: #fbfbfb;
+    background-color: rgb(255, 141, 2);
+    color: #313030;
 }
 
 
@@ -445,11 +460,18 @@ a{
     justify-content: end;
     padding: 10px;
     margin-top: 5px;
-    background-color: #f09b34ed;
+    background-color: #f09b34b6;
     color: #151515;
     border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
     font-size: large;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    transition: all 1s;
 }
+.quinto .contactocontenedor button:hover{
+    background-color: rgba(240, 155, 52);
+    color: #fbfbfb;
+    
+}
+
 
