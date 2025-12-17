@@ -5,260 +5,135 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+
+    .rayas{
+        color: #fbfbfb !important;
+    }
+    .hero-50 {
+        height: 65vh !important;
+        padding-top: 80px;
+    }
+
+    .hero-50 h1 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .izquierda {
+        padding: 30px 20px !important;
+        text-align: left;
+    }
+
+    .izquierda h3 {
+        font-size: 1.5rem;
+    }
+
+    .tercero img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    #contacto {
+        padding-bottom: 40px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
 }
 
 
-@media only screen and (min-width: 601px) {
-}
 
 html{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     height: 100%;
-}  
+}
+
 /*cabecera*/
-.foto nav{
-    background-color: rgba(10, 10, 0, 0.769);
-    display: flex; 
-    height: 15%;
-    width: 100%;
-    margin: 0%;
-    z-index: 1; 
-    position: fixed;
-}
-.cabezatodo nav {
-    background-color: rgba(10, 10, 0, 0.769);
-    display: flex; 
-    height: 15%;
-    width: 100%;
-    margin: 0%;
-    z-index: 1;
+.hero-50 {
+    height: 100vh; /* 🔥 SOLO 50% DE LA PANTALLA */
+    background-image: url("imagenes/nav.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.cabezaa{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%; 
-    transition: background-color 0.2s ease;
-    transition: all 1s;
+nav{
+    background-color: #1b1b1b9c !important;
 }
 
-.cabeza a{
-    display: flex;
-    color: rgb(255, 252, 252);
-    text-decoration: none;
-    padding-right: 5%; 
-    padding-left: 5%;
-    width: 100%;
+.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fbfbfb !important;
+
 }
 
-.logoh1{
-    display: flex;
-    width: 30%;
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.logoh1 h1 {
-    display: flex;
-    align-items: center;
-    color: aliceblue;
-    margin-left: 20px;
-    width: 15%;
-    height: 100%;
-    text-shadow: 2px 2px 10px rgba(46, 45, 45, 0.5);
-}
-
-nav a:hover,
- h1:hover{
-    color: #f29422d8;
+h1:hover, .logo:hover{
+    color: #f09b34 !important;
     text-shadow: none;
 }
 
-/*foto de fondo*/
-.foto{
-    background-image: url(imagenes/hombre.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
-.first{
-    width: 100%;
-    height: 100vh;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-}
-.first .first1{
-    width: 50rem;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
-.primero1 p{
-    font-size: 150%;
-    color: white;
-    display: flex;
-    justify-content: center;
-
-}
-.primero2 p{
-    font-size: 325%;
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-
-/*segunda seccion*/
-main .fondo{
-    background-image: url(imagenes/hombre.webp);  
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.second{ 
-    display: flex;
-    height: 70vh;
-    background-color: #313030;
-    
-}
-.derecha{
-    width: 50%;
-    background-color: #0f0e0e;
-}
-
-.derecha img{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    display: block;
-    height: calc(100vh * 70 / 100);
- 
-}
 .izquierda{
-    width: 50%;
-    background-color: #f09b34ed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;   
+    background-color: #f09b34;
+    text-align: justify;
+    padding: 80px 80px 0px 80px !important;
 }
-.izquierda h3{
-    width: 20rem;
-    font-size: 190%;
-    display: flex;
-    flex-direction: column;
-
+.nosotros{
+    margin: 10% !important;
 }
-.izquierda p{
-    margin-top: 0.625rem;
-    line-height: 1.5;
-    font-size: 100%;
-    width: 20rem;
-    text-align: justify; 
-    color: #151515;
-} 
 
 /*tercera parte*/
 .tercero {
-    display: flex;
-    justify-content: space-around;
-}
- .tercero img{
-    width: 100%;
-    border-radius: 2%;
-    margin: 0%;
- }
-
- .superpuesto a{
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
- }
-
-.superpuesto{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(14, 14, 14);
-    color: white;
-    padding: 4%;
-    width: 80%;
-    border-radius: 5px;
-    font-size: large; 
-    margin-left: 30px;
-    position: relative;
-    bottom: 80px;
-    transition: all 2s ease, 0.1s ease; 
-}
-.superpuesto:hover{
-    background-color: rgba(9, 8, 8, 0.832);
-    transform: scale(1.2);
-}
-
-/*informacion al final*/
-.info{
-    display: flex;
-    justify-content: end;
-    
-}
-.info1, .info2{
-   line-height: 2em;
-   width: 30%;
-   padding: 20px;
-   color: #b98a44;
-   overflow-wrap: break-word;
-}
-.info a{
-    text-decoration: none;
-    color: #b98a44;
-    display: block;
-}
-.direccion::before{
-    content: '';
-    display: inline-block;
-    width: 20px; 
-    height: 20px; 
-    margin-right: 5px; 
-    background-image: url('imagenes/mapa.png'); 
-    background-size: cover; 
-}
-.telefono::before{
-    content: '';
-    display: inline-block;
-    width: 20px; 
-    height: 20px; 
-    margin-right: 5px; 
-    background-image: url('imagenes/whatsapp.png'); 
-    background-size: cover; 
-}
-.correo::before{
-    content: '';
-    display: inline-block;
-    width: 20px; 
-    height: 20px; 
-    margin-right: 5px; 
-    margin-left: 5px;
-    background-image: url('imagenes/gmail.png'); 
-    background-size: cover; 
-}
-
-/*Css de footer*/
-footer{
     background-color: rgb(27, 27, 27);
+}
+
+.imagen-con-texto img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagen-con-texto a {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.imagen-con-texto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+
+.imagen-con-texto:hover a {
+    transform: scale(1.2);
+    font-weight: 700;
+    color: #fbfbfb;
+}
+
+.primer-lado{
+    background-color: #313030;
+}
+
+.input-email{
+    width: 100% !important;
+}
+
+
+.redes{
+    background-color: #313030 !important;
+}
+/*Css de footer*/
+
+footer{
+    background-color: #1b1b1bbb !important;
     position: relative; 
     left: 0;
     bottom: 0;
@@ -268,210 +143,6 @@ footer{
     z-index: 999;
 }   
 
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    text-align: center;
-}
 
-.footer-content p {
-    margin: 0;
-    font-size: 16px;  
-}
-
-.footer-content::before{
-    content: '💛';
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    top: 5px;
-    margin-right: 20px;
-}  
-
-
-/*Css header servicios y acerca de*/
-.titulo1 { /*parte de arriba de acerca-servicios*/
-    color: #fbfbfc;
-    background-image: url(imagenes/hombre.webp);
-    font-size: x-large;
-    display: flex;
-    justify-content: center; 
-    height: auto;
-    margin-top: -81px;
-    
-}
-
-
-.titulo1 h2{
-    height: 170px;
-    font-size: larger;
-    display: flex;
-    align-items: end; 
-}
-/*Css servicios*/
-table {
-    border-collapse: collapse;
-    width: 50%;
-    font-size: larger;
-    margin-top: 80px;
-
-  }
-  
-  th, td {
-    text-align: left;
-    border-bottom: 1px solid #0c0c0c8b;
-    color: #313030;
-  }
-
-.tabla-container table button{
-    font-size: small;
-    background-color: rgba(10, 10, 0, 0.769);
-    padding: 6%;
-    border: none;
-    transition: background-color 0.2s ease;
-    transition: all 1s;
-  }
-
-.tabla-container table button:hover{
-    background-color: rgb(10, 10, 0);  
-}
-.tabla-container a{
-    color: #ffffff;
-}
-.tabla-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    font-size: large;
-    line-height: 4;
-}
-
-.container {
-    font-size: small;
-    width: 50%;
-    text-align: center;
-    padding: 20px;
-    margin-left: 25%;
-    color: #313030;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input[type="email"] {
-    padding: 8px;
-    margin-bottom: 10px;
-    width: 50%;
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.container button{
-    padding: 5px;
-    width: 50%;
-    background-color: rgba(255, 168, 61, 0.988);
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    transition: all 1s;
-}
-
-button:hover {
-    background-color: rgb(255, 141, 2);
-    color: #313030;
-}
-
-
-/*Css de Acerca de*/
-.vision{
-    margin: 5% 20% 10% 20%;
-    text-align: center;
-    color: #313030;
-    font-size: larger;
-}
-/*Css de contacto*/
-.cabezatodo{
-    height: 20%;
-    background-color: rgba(174, 174, 39, 0.769);
-    display: flex; 
-    height: 15%;
-    width: 100%;
-    margin: 0%;
-    z-index: 1; 
-}
-.quinto{
-    display: flex;
-    height: 100vh;
-    margin-top: -81px;
- }
-
-.contacto{
-    background-color: #f2f2f2ed;
-    width: 40%;
-    color: rgb(1, 1, 1);
- }
-
-.contacto .contactocontenedor{
-    width: 60%;
-    display: block;
-    justify-content: center;
-    margin: 45% auto;
-}
- .contactoImg{
-    width: 60%; 
- }   
-
- .contactoImg img{
-    width: 100%;
-    height: 100vh;
-}
-
- .contacto h3{
-    display: block;
-    line-height: 1.5;
-    font-size: 140%;
-}
-
-.contacto h3 span{
-    display: block; 
-}
-
- .contacto p{
-    line-height: 2;
-}  
-.quinto a{
-    color: #0f0e0e;
-}
-
-a{
-    text-decoration: none;
-}
-
-.quinto button{
-    display: flex;
-    justify-content: end;
-    padding: 10px;
-    margin-top: 5px;
-    background-color: #f09b34b6;
-    color: #151515;
-    border: none;
-    font-size: large;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    transition: all 1s;
-}
-.quinto .contactocontenedor button:hover{
-    background-color: rgba(240, 155, 52);
-    color: #fbfbfb;
-    
-}
 
 

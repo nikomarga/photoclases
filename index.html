@@ -6,95 +6,189 @@
     <link rel="stylesheet" href="style.css">
     <title>PHOTOCLASSES</title>
     <link rel="shortcut icon" href="imagenes/imagen.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <header class="foto">
-      <nav class="cabeza"> 
-        <div class="logoh1">
-            <h1 >PHOTO CLAS SES</h1>
-        </div>
-        <div class="cabezaa">
-            <a href="index.html">INICIO</a>
-            <a href="vision.html">ACERCA DE</a>
-            <a href="acercade.html">SERVICIOS</a>
-            <a href="contacto.html">CONTACTO</a>
-        </div>
-      </nav>
-    
-        <div class="first">
-            <div class="first1">
-                <div class="primero1">
-                    <p>Captura momentos, crea historias</p>
-                </div>
-                <div class="primero2">
-                    <p>¡Descubre tu pasión en nuestro <br> colegio de fotografía y arte!</p>
-                </div>
+   <header>
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-dark px-4 fixed-top">
+            <a class="navbar-brand fw-bold logo" href="#">PHOTO<br>CLAS<br>SES</a>
+
+            <button class="navbar-toggler rayas" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menuNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca">ACERCA DE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicio">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+
+
+        <!-- HERO 50% -->
+        <section class="hero-50 d-flex align-items-center justify-content-center text-center">
+            <div class="text-white px-3">
+                <p class="mb-2">Captura momentos, crea historias</p>
+                <h1>
+                    ¡Descubre tu pasión en nuestro<br>
+                    colegio de fotografía y arte!
+                </h1>
+            </div>
+        </section>
 
     </header>
 
+
     <main class="fondo">
-        <div class="second">
-            <div class="izquierda">
-                <h3><span>Sobre </span>nosotros</h3>
-                <p>Bienvenido a PHOTO CLASSES, donde la pasión por la fotografía y arte se une con la excelencia educativa. Desde nuestra fundación, nos hemos comprometido a proporcionar una experiencia educativa única y enriquecedora para todos los apasionados de la fotografía, ya sean principiantes entusiastas o profesionales en busca de perfeccionar su arte.</p>
+        <div class="container-fluid" id="acerca">
+            <div class="row">
+                <!-- Columna izquierda -->
+                <div class="col-md-6 mb-md-0 izquierda">
+                    <h3 >
+                        Sobre <br>
+                        nosotros
+                    </h3>
+                    <p class="">
+                        Bienvenido a PHOTO CLASSES, donde la pasión por la fotografía y arte se une con la excelencia educativa. 
+                        Desde nuestra fundación, nos hemos comprometido a proporcionar una experiencia educativa única y enriquecedora 
+                        para todos los apasionados de la fotografía, ya sean principiantes entusiastas o profesionales en busca de perfeccionar su arte.
+                    </p>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col-md-6 p-0">
+                    <img src="imagenes/fotospersonas.webp" alt="personas" class="img-fluid w-100">
+                </div>
             </div>
-            <div class="derecha">
-                <img src="imagenes/fotospersonas.webp" alt="dos perdonas">
+        </div>
+        <!-- tercera parte -->
+        <div id="servicio" class="container-fluid tercero w-100" >
+            <div class="row g-0">
+                <div class="col-12 col-md-6 col-lg-3 position-relative imagen-con-texto">
+                    <img src="imagenes/fotoOscura1.jpeg" class="img-fluid  w-100" alt="fotoDosCaras">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center">
+                        <a href="acercade.html" target="_blank" class="text-white fw-bold text-decoration-none">
+                            Fotografía Artística
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 position-relative imagen-con-texto">
+                    <img src="imagenes/fotoOscura2.jpeg" class="img-fluid w-100" alt="dosJovenes">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center">
+                        <a href="acercade.html" target="_blank" class="text-white fw-bold text-decoration-none">
+                            Fotoperiodismo Documental
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 position-relative imagen-con-texto">
+                    <img src="imagenes/fotosOscura3.jpeg" class="img-fluid w-100" alt="caras">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center">
+                        <a href="acercade.html" target="_blank" class="text-white fw-bold text-decoration-none">
+                            Diseño Fotográfico
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 position-relative imagen-con-texto">
+                    <img src="imagenes/paisajeOscuro4.jpeg" class="img-fluid w-100" alt="paisaje">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center">
+                        <a href="acercade.html" target="_blank" class="text-white fw-bold text-decoration-none">
+                            Diseño
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="tercero">
-            <div class="imagen-con-texto">
-                    <img src="imagenes/fotoOscura1.jpeg" alt="fotoDosCaras">
-                    <div class="superpuesto">
-                        <a href="acercade.html" target="_blank">Fotografia Artistica</a>
-                    </div>
-            </div>
-            
-            <div class="imagen-con-texto">
-                    <img src="imagenes/fotoOscura2.jpeg" alt="dosJovenes">
-                    <div class="superpuesto">
-                        <a href="acercade.html" target="_blank">Fotoperiodismo Documentalismo</a>
-                    </div>
-            </div>
-            
-            <div class="imagen-con-texto">
-                    <img src="imagenes/fotosOscura3.jpeg" alt="caras">
-                    <div class="superpuesto">
-                        <a href="acercade.html" target="_blank">Diseño Fotografico</a>
-                    </div>
-            </div> 
 
-             <div class="imagen-con-texto">
-                    <img src="imagenes/paisajeOscuro4.jpeg" alt="caras">
-                    <div class="superpuesto">
-                        <a href="acercade.html" target="_blank">Diseño</a>
+        <div class="container" id="contacto" >
+            <div class="row g-5 pt-5">
+                <!-- FORMULARIO DE CONTACTO -->
+                <div class="col-md-8">
+                    <h4 class="mb-4 fw-bold">CONTÁCTANOS</h4>
+
+                    <form id="formContacto">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" placeholder="Tu nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" name="correo" placeholder="correo@email.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control" rows="4" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary px-4">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+
+                <!-- INFORMACIÓN DE CONTACTO -->
+                <div class="col-md-4">
+                    <h4 class="mb-4 fw-bold">INFORMACIÓN</h4>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <a href="https://www.bing.com/maps?mepi=23%7E%7ETopOfPage%7ELargeMapLink&ty=18&q=Carrera+88+35D-37%2C+Comuna+12+-+La+Am%C3%A9rica%2C+Medellin%2C+Antioquia%2C+050032" 
+                            target="_blank" 
+                            class="text-dark text-decoration-none">
+                                Cr 88 #35d-37 Barrio Cristóbal, Medellín
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:Nikole_margaritacarrasquel@gmail.com" 
+                            class="text-dark text-decoration-none">
+                                Nikole_margaritacarrasquel@gmail.com
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <a href="https://wa.me/573145264577" target="_blank" 
+                            class="text-dark text-decoration-none">
+                                +57 314 526 4577
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/nolyhet" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/nikolemargarita/" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="mailto:Nikole_margaritacarrasquel@gmail.com" class="text-dark fs-5"><i class="bi bi-envelope"></i></a>
                     </div>
-             </div>
-         </div>
-
-        <div class="info">
-            <div class="info1">
-                <h4>CONTACTANOS</h4>
-                <a class="direccion" href="https://www.bing.com/maps?mepi=23%7E%7ETopOfPage%7ELargeMapLink&ty=18&q=Carrera+88+35D-37%2C+Comuna+12+-+La+Am%C3%A9rica%2C+Medellin%2C+Antioquia%2C+050032&ppois=6.246725_-75.6110859_Carrera+88+35D-37%2C+Comuna+12+-+La+Am%C3%A9rica%2C+Medellin%2C+Antioquia%2C+050032_%7E&cp=6.246877%7E-75.611177&v=2&sV=1&FORM=MIRE&qpvt=Cr+88+%2335d-37+Barrio+cristobal%2C+medellin.&lvl=19.0" target="_blank">Cr 88 #35d-37 Barrio cristobal, medellin.</a>
-                <a class="correo" href="mailto:Nikole_margaritacarrasquel@gmail.com" target="_blank">Nikole_margaritacarrasquel@gmail.com</a>
-                <a class="telefono" href="https://wa.me/3145264577" target="_blank">+57 314-5264577</a>
+                </div>
             </div>
-            <div class="info2">
-                <H4>CONECTATE</H4>
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>Twitter</p>
-            </div>
-        </div>  
-   </main> 
-
-    <footer>
-        <div class="footer-content">
-            <p>Diseñado por Nikole Carrasquel</p>
         </div>
-    </footer>
+    </main>
+
+<footer class="bg-dark text-center text-white py-3 mt-5">
+    <p class="mb-0 footer-content">
+        © 2025 Photoclases. Todos los derechos reservados.
+    </p>
+</footer>
+
+<script src="include.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body> 
 </html>

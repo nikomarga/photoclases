@@ -1,15 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Incluir el encabezado
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector('header').innerHTML = data;
-        });
+document.getElementById("formContacto").addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-    // Incluir el pie de página
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector('footer').innerHTML = data;
-        });
+    const data = {
+        nombre : e.target.nombre.value,
+        correo : e.target.correo.value,
+        mensaje : e.target.mensaje.value
+    }
+
+    const response  = await fetch("http://localhost:5000/enviar", {
+        method: "POST",
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
+    const resultado = await response.json();
+    alert(resultado.mensaje);
+    e.target.reset();
 });
+
